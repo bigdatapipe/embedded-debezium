@@ -7,8 +7,8 @@
     <groupId>win.vnique.company</groupId>
     <artifactId>company-cdc-test</artifactId>
     <version>0.0.1</version>
-    <name>Company CDC Relay</name>
-    <description>Company CDC Relay Demo</description>
+    <name>Company CDC Test</name>
+    <description>Company CDC Test Demo</description>
 
     <!-- Properties for the project and its Dependencies -->
     <properties>

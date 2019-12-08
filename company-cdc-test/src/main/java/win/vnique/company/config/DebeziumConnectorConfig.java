@@ -30,7 +30,7 @@ public class DebeziumConnectorConfig {
     @Value("${company.datasource.password}")
     private String companyDBPassword;
 
-    private String COMPANY_TABLE_NAME = "company";
+    private String COMPANY_TABLE_NAME = "public.company";
 
     /**
      * Company database connector.
@@ -42,7 +42,7 @@ public class DebeziumConnectorConfig {
         return io.debezium.config.Configuration.create()
                 .with("connector.class", "io.debezium.connector.postgresql.PostgresConnector")
                 .with("offset.storage",  "org.apache.kafka.connect.storage.FileOffsetBackingStore")
-                .with("offset.storage.file.filename", "company-offset.dat")
+                .with("offset.storage.file.filename", "D:\\ideaPro\\embedded-debezium\\company-offset.dat")
                 .with("offset.flush.interval.ms", 30000)
                 .with("name", "company-postgres-connector")
                 .with("database.server.name", companyDBHost+"-"+companyDBName)

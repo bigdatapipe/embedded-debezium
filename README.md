@@ -38,9 +38,9 @@ mvn spring-boot:run
 ## Scripts to Insert, Update and Delete a record on Postgres
 
 ```sql
-INSERT INTO COMPANY(ID, NAME, ADDRESS, EMAIL) VALUES('1','wydewy','Beijing, Haidian','vnique@gmail.com');
+INSERT INTO COMPANY(ID, NAME, ADDRESS, CODE) VALUES('2','wydewy','Beijing, Haidian','dskncndjncsd');
 
-UPDATE COMPANY SET EMAIL='vnique@gmail.com', NAME='vnique' WHERE ID = 1; 
+UPDATE COMPANY SET CODE='cdcdvdfvxdfv', NAME='vnique' WHERE ID = 2; 
 
 DELETE FROM COMPANY WHERE ID = 1;
 ```

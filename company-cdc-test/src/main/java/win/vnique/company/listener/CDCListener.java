@@ -104,6 +104,8 @@ public class CDCListener {
                 }
 
                 //Build a map with all row data received.
+
+                //将接受到的数据构造成message事件
                 Struct struct = (Struct) sourceRecordValue.get(record);
                 message = struct.schema().fields().stream()
                         .map(Field::name)
@@ -111,9 +113,9 @@ public class CDCListener {
                         .map(fieldName -> Pair.of(fieldName, struct.get(fieldName)))
                         .collect(toMap(Pair::getKey, Pair::getValue));
 
-                //Call the service to handle the data change.
+                //调用目的数据库的服务处理数据变更
                 this.companyService.maintainReadModel(message, operation);
-                log.info("Data Changed: {} with Operation: {}", message, operation.name());
+                log.info("数据发送变更: {} 变更操作是: {}", message, operation.name());
             }
         }
     }
