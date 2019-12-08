@@ -104,3 +104,117 @@
 2019-12-08 13:20:44.713  INFO 8740 --- [debezium-postgresconnector-cent1-testdb-change-event-source-coordinator] i.d.c.p.connection.PostgresConnection    : Obtained valid replication slot ReplicationSlot [active=false, latestFlushedLsn=23737936, catalogXmin=553]
 2019-12-08 13:35:04.344  INFO 8740 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2019-12-08 13:35:06.357  INFO 8740 --- [pool-2-thread-1] o.a.k.c.storage.FileOffsetBackingStore   : Stopped FileOffsetBackingStore
+2019-12-08 13:36:18.888  INFO 14708 --- [main] w.v.company.CompanyCDCTestApplication    : Starting CompanyCDCTestApplication on DESKTOP-ITHJBN8 with PID 14708 (D:\ideaPro\embedded-debezium\company-cdc-test\target\classes started by vnique in D:\ideaPro\embedded-debezium\company-cdc-test)
+2019-12-08 13:36:18.894  INFO 14708 --- [main] w.v.company.CompanyCDCTestApplication    : No active profile set, falling back to default profiles: default
+2019-12-08 13:36:20.352  INFO 14708 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-08 13:36:20.483  INFO 14708 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 123ms. Found 1 repository interfaces.
+2019-12-08 13:36:22.127  INFO 14708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-08 13:36:22.197  INFO 14708 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-08 13:36:22.198  INFO 14708 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-12-08 13:36:22.430  INFO 14708 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-08 13:36:22.431  INFO 14708 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3472 ms
+2019-12-08 13:36:24.211  INFO 14708 --- [main] o.elasticsearch.plugins.PluginsService   : no modules loaded
+2019-12-08 13:36:24.213  INFO 14708 --- [main] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2019-12-08 13:36:24.214  INFO 14708 --- [main] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2019-12-08 13:36:24.214  INFO 14708 --- [main] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2019-12-08 13:36:24.214  INFO 14708 --- [main] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2019-12-08 13:36:24.215  INFO 14708 --- [main] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2019-12-08 13:36:26.610  INFO 14708 --- [main] o.s.d.e.c.TransportClientFactoryBean     : Adding transport node : 182.92.222.75:9300
+2019-12-08 13:36:29.405  INFO 14708 --- [main] o.a.k.connect.json.JsonConverterConfig   : JsonConverterConfig values: 
+	converter.type = key
+	schemas.cache.size = 1000
+	schemas.enable = true
+
+2019-12-08 13:36:29.410  INFO 14708 --- [main] o.a.k.connect.json.JsonConverterConfig   : JsonConverterConfig values: 
+	converter.type = value
+	schemas.cache.size = 1000
+	schemas.enable = false
+
+2019-12-08 13:36:29.419  INFO 14708 --- [main] i.d.e.EmbeddedEngine$EmbeddedConfig      : EmbeddedConfig values: 
+	access.control.allow.methods = 
+	access.control.allow.origin = 
+	bootstrap.servers = [localhost:9092]
+	config.providers = []
+	header.converter = class org.apache.kafka.connect.storage.SimpleHeaderConverter
+	internal.key.converter = class org.apache.kafka.connect.json.JsonConverter
+	internal.value.converter = class org.apache.kafka.connect.json.JsonConverter
+	key.converter = class org.apache.kafka.connect.json.JsonConverter
+	listeners = null
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	offset.flush.interval.ms = 30000
+	offset.flush.timeout.ms = 5000
+	offset.storage.file.filename = D:\ideaPro\embedded-debezium\company-offset.dat
+	offset.storage.partitions = null
+	offset.storage.replication.factor = null
+	offset.storage.topic = 
+	plugin.path = null
+	rest.advertised.host.name = null
+	rest.advertised.listener = null
+	rest.advertised.port = null
+	rest.extension.classes = []
+	rest.host.name = null
+	rest.port = 8083
+	ssl.client.auth = none
+	task.shutdown.graceful.timeout.ms = 5000
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+
+2019-12-08 13:36:29.426  INFO 14708 --- [main] o.a.kafka.connect.runtime.WorkerConfig   : Worker configuration property 'internal.key.converter' is deprecated and may be removed in an upcoming release. The specified value matches the default, so this property can be safely removed from the worker configuration.
+2019-12-08 13:36:29.427  INFO 14708 --- [main] o.a.kafka.connect.runtime.WorkerConfig   : Worker configuration property 'internal.value.converter' is deprecated and may be removed in an upcoming release. The specified value matches the default, so this property can be safely removed from the worker configuration.
+2019-12-08 13:36:29.447  INFO 14708 --- [pool-2-thread-1] o.a.k.c.storage.FileOffsetBackingStore   : Starting FileOffsetBackingStore with file D:\ideaPro\embedded-debezium\company-offset.dat
+2019-12-08 13:36:29.551  INFO 14708 --- [pool-2-thread-1] i.d.connector.common.BaseSourceTask      : Starting PostgresConnectorTask with configuration:
+2019-12-08 13:36:29.553  INFO 14708 --- [pool-2-thread-1] i.d.connector.common.BaseSourceTask      :    connector.class = io.debezium.connector.postgresql.PostgresConnector
+2019-12-08 13:36:29.557  INFO 14708 --- [pool-2-thread-1] i.d.connector.common.BaseSourceTask      :    offset.flush.interval.ms = 30000
+2019-12-08 13:36:29.565  INFO 14708 --- [pool-2-thread-1] i.d.connector.common.BaseSourceTask      :    database.user = root
+2019-12-08 13:36:29.565  INFO 14708 --- [pool-2-thread-1] i.d.connector.common.BaseSourceTask      :    database.dbname = testdb
+2019-12-08 13:36:29.566  INFO 14708 --- [pool-2-thread-1] i.d.connector.common.BaseSourceTask      :    offset.storage.file.filename = D:\ideaPro\embedded-debezium\company-offset.dat
+2019-12-08 13:36:29.566  INFO 14708 --- [pool-2-thread-1] i.d.connector.common.BaseSourceTask      :    offset.storage = org.apache.kafka.connect.storage.FileOffsetBackingStore
+2019-12-08 13:36:29.567  INFO 14708 --- [pool-2-thread-1] i.d.connector.common.BaseSourceTask      :    database.hostname = cent1
+2019-12-08 13:36:29.567  INFO 14708 --- [pool-2-thread-1] i.d.connector.common.BaseSourceTask      :    database.password = ********
+2019-12-08 13:36:29.567  INFO 14708 --- [pool-2-thread-1] i.d.connector.common.BaseSourceTask      :    name = company-postgres-connector
+2019-12-08 13:36:29.568  INFO 14708 --- [pool-2-thread-1] i.d.connector.common.BaseSourceTask      :    database.server.name = cent1-testdb
+2019-12-08 13:36:29.568  INFO 14708 --- [pool-2-thread-1] i.d.connector.common.BaseSourceTask      :    database.port = 5432
+2019-12-08 13:36:29.569  INFO 14708 --- [pool-2-thread-1] i.d.connector.common.BaseSourceTask      :    table.whitelist = public.company
+2019-12-08 13:36:29.834  INFO 14708 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-08 13:36:30.106  INFO 14708 --- [pool-2-thread-1] i.d.c.postgresql.PostgresConnectorTask   : user 'root' connected to database 'testdb' on PostgreSQL 9.6.16 on x86_64-pc-linux-gnu (Debian 9.6.16-1.pgdg90+1), compiled by gcc (Debian 6.3.0-18+deb9u1) 6.3.0 20170516, 64-bit with roles:
+	role 'root' [superuser: true, replication: true, inherit: true, create role: true, create db: true, can log in: true]
+	role 'pg_signal_backend' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+2019-12-08 13:36:30.136  INFO 14708 --- [pool-2-thread-1] i.d.c.p.connection.PostgresConnection    : Obtained valid replication slot ReplicationSlot [active=false, latestFlushedLsn=23737936, catalogXmin=553]
+2019-12-08 13:36:30.142  INFO 14708 --- [pool-2-thread-1] i.d.c.postgresql.PostgresConnectorTask   : No previous offset found
+2019-12-08 13:36:30.165  INFO 14708 --- [pool-2-thread-1] io.debezium.util.Threads                 : Requested thread factory for connector PostgresConnector, id = cent1-testdb named = error-handler
+2019-12-08 13:36:30.184  INFO 14708 --- [pool-2-thread-1] io.debezium.util.Threads                 : Requested thread factory for connector PostgresConnector, id = cent1-testdb named = change-event-source-coordinator
+2019-12-08 13:36:30.192  INFO 14708 --- [pool-2-thread-1] io.debezium.util.Threads                 : Creating thread debezium-postgresconnector-cent1-testdb-change-event-source-coordinator
+2019-12-08 13:36:30.247  INFO 14708 --- [debezium-postgresconnector-cent1-testdb-change-event-source-coordinator] i.d.c.p.snapshot.InitialSnapshotter      : Taking initial snapshot for new datasource
+2019-12-08 13:36:30.249  INFO 14708 --- [debezium-postgresconnector-cent1-testdb-change-event-source-coordinator] .d.c.p.PostgresSnapshotChangeEventSource : According to the connector configuration data will be snapshotted
+2019-12-08 13:36:30.251  INFO 14708 --- [debezium-postgresconnector-cent1-testdb-change-event-source-coordinator] .d.r.RelationalSnapshotChangeEventSource : Snapshot step 1 - Preparing
+2019-12-08 13:36:30.253  INFO 14708 --- [debezium-postgresconnector-cent1-testdb-change-event-source-coordinator] .d.c.p.PostgresSnapshotChangeEventSource : Setting isolation level
+2019-12-08 13:36:30.254  INFO 14708 --- [debezium-postgresconnector-cent1-testdb-change-event-source-coordinator] .d.c.p.PostgresSnapshotChangeEventSource : Opening transaction with statement SET TRANSACTION ISOLATION LEVEL SERIALIZABLE, READ ONLY, DEFERRABLE;
+2019-12-08 13:36:30.416  INFO 14708 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-08 13:36:30.544  INFO 14708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-08 13:36:30.548  INFO 14708 --- [main] w.v.company.CompanyCDCTestApplication    : Started CompanyCDCTestApplication in 12.795 seconds (JVM running for 23.002)
+2019-12-08 13:36:30.637  WARN 14708 --- [debezium-postgresconnector-cent1-testdb-change-event-source-coordinator] i.d.connector.postgresql.PostgresSchema  : The Kafka Connect schema name 'cent1-testdb.public.company.Value' is not a valid Avro schema name, so replacing with 'cent1_testdb.public.company.Value'
+2019-12-08 13:36:30.638  WARN 14708 --- [debezium-postgresconnector-cent1-testdb-change-event-source-coordinator] i.d.connector.postgresql.PostgresSchema  : The Kafka Connect schema name 'cent1-testdb.public.company.Key' is not a valid Avro schema name, so replacing with 'cent1_testdb.public.company.Key'
+2019-12-08 13:36:30.646  WARN 14708 --- [debezium-postgresconnector-cent1-testdb-change-event-source-coordinator] i.d.connector.postgresql.PostgresSchema  : The Kafka Connect schema name 'cent1-testdb.public.company.Envelope' is not a valid Avro schema name, so replacing with 'cent1_testdb.public.company.Envelope'
+2019-12-08 13:36:30.652  INFO 14708 --- [debezium-postgresconnector-cent1-testdb-change-event-source-coordinator] .d.r.RelationalSnapshotChangeEventSource : Snapshot step 2 - Determining captured tables
+2019-12-08 13:36:30.665  INFO 14708 --- [debezium-postgresconnector-cent1-testdb-change-event-source-coordinator] .d.r.RelationalSnapshotChangeEventSource : Snapshot step 3 - Locking captured tables
+2019-12-08 13:36:30.667  INFO 14708 --- [debezium-postgresconnector-cent1-testdb-change-event-source-coordinator] .d.c.p.PostgresSnapshotChangeEventSource : Waiting a maximum of '10' seconds for each table lock
+2019-12-08 13:36:30.990  INFO 14708 --- [debezium-postgresconnector-cent1-testdb-change-event-source-coordinator] .d.r.RelationalSnapshotChangeEventSource : Snapshot step 4 - Determining snapshot offset
+2019-12-08 13:36:31.008  INFO 14708 --- [debezium-postgresconnector-cent1-testdb-change-event-source-coordinator] .d.c.p.PostgresSnapshotChangeEventSource : Read xlogStart at '0/16A3BE8' from transaction '556'
+2019-12-08 13:36:31.010  INFO 14708 --- [debezium-postgresconnector-cent1-testdb-change-event-source-coordinator] .d.c.p.PostgresSnapshotChangeEventSource : Creating initial offset context
+2019-12-08 13:36:31.025  INFO 14708 --- [debezium-postgresconnector-cent1-testdb-change-event-source-coordinator] .d.c.p.PostgresSnapshotChangeEventSource : Read xlogStart at '0/16A3BE8' from transaction '556'
+2019-12-08 13:36:31.029  INFO 14708 --- [debezium-postgresconnector-cent1-testdb-change-event-source-coordinator] .d.r.RelationalSnapshotChangeEventSource : Snapshot step 5 - Reading structure of captured tables
+2019-12-08 13:36:31.029  INFO 14708 --- [debezium-postgresconnector-cent1-testdb-change-event-source-coordinator] .d.c.p.PostgresSnapshotChangeEventSource : Reading structure of schema 'testdb'
+2019-12-08 13:36:31.130  INFO 14708 --- [debezium-postgresconnector-cent1-testdb-change-event-source-coordinator] .d.r.RelationalSnapshotChangeEventSource : Snapshot step 6 - Persisting schema history
+2019-12-08 13:36:31.131  INFO 14708 --- [debezium-postgresconnector-cent1-testdb-change-event-source-coordinator] .d.r.RelationalSnapshotChangeEventSource : Snapshot step 7 - Snapshotting data
+2019-12-08 13:36:31.133  INFO 14708 --- [debezium-postgresconnector-cent1-testdb-change-event-source-coordinator] .d.r.RelationalSnapshotChangeEventSource : 	 Exporting data from table 'public.company'
+2019-12-08 13:36:31.134  INFO 14708 --- [debezium-postgresconnector-cent1-testdb-change-event-source-coordinator] .d.r.RelationalSnapshotChangeEventSource : 	 For table 'public.company' using select statement: 'SELECT * FROM "public"."company"'
+2019-12-08 13:36:31.174  INFO 14708 --- [debezium-postgresconnector-cent1-testdb-change-event-source-coordinator] .d.r.RelationalSnapshotChangeEventSource : 	 Finished exporting 1 records for table 'public.company'; total duration '00:00:00.041'
+2019-12-08 13:36:31.195  INFO 14708 --- [debezium-postgresconnector-cent1-testdb-change-event-source-coordinator] .d.r.RelationalSnapshotChangeEventSource : Snapshot step 8 - Finalizing
+2019-12-08 13:36:31.282  INFO 14708 --- [debezium-postgresconnector-cent1-testdb-change-event-source-coordinator] i.d.c.p.connection.PostgresConnection    : Obtained valid replication slot ReplicationSlot [active=false, latestFlushedLsn=23737936, catalogXmin=553]
+2019-12-08 13:36:31.443  INFO 14708 --- [debezium-postgresconnector-cent1-testdb-change-event-source-coordinator] i.d.connector.postgresql.PostgresSchema  : REPLICA IDENTITY for 'public.company' is 'DEFAULT'; UPDATE and DELETE events will contain previous values only for PK columns
+2019-12-08 13:37:51.594  INFO 14708 --- [pool-2-thread-1] win.vnique.company.listener.CDCListener  : Data Changed: {id=1} with Operation: DELETE
+2019-12-08 13:39:09.251  INFO 14708 --- [pool-2-thread-1] win.vnique.company.listener.CDCListener  : Data Changed: {code=dskncndjncsd, address=Beijing, Haidian, name=wydewy, id=2} with Operation: CREATE
+2019-12-08 13:39:53.740  INFO 14708 --- [pool-2-thread-1] win.vnique.company.listener.CDCListener  : Data Changed: {code=cdcdvdfvxdfv, address=Beijing, Haidian, name=vnique, id=2} with Operation: UPDATE
+2019-12-08 13:40:54.718  INFO 14708 --- [pool-2-thread-1] win.vnique.company.listener.CDCListener  : Data Changed: {id=2} with Operation: DELETE
